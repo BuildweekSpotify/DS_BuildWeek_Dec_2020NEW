@@ -1,24 +1,28 @@
-<html>
-    <head>
-        <title>Spotify Recommendations</title>
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    </head>
-
-    <body>
-            <div class="ui container">
-        <h1>Spotify Recommendations</h1>
-        
-<form action="/recommend" method="get" >
-<div class="ui input">
-  <input type="text" placeholder="Search..." class="">
-</div>   
-    <button class="ui button primary">Submit</button>
-</form> 
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <title>Track Match</title>
+</head>
+<body>
+    <h1 style="text-align:center;">Track Match</h1>
+    <br>
+    <form style="text-align:center;" method="POST">
+        <div class="Form__field">
+            <label for="ssong" class="form__label">Input a song title</label>
+            <input type=text id="ssong" name="ssong">
         </div>
-    </body>
+
+        <div class="form__fieldset">
+            <input
+            class="form__submit form__input"
+            type="submit"
+            value="Show Me Results"
+            />
+    </form>
+<h4 style="text-align:center;">The app will return in a few seconds tracks you should enjoy, base on the choice you just entered.</h4>
+<h1 style="text-align:center;"></h1>
+</body>
 </html>
